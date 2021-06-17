@@ -177,6 +177,41 @@ Check list of installed packages via apt-get.
 
 `apt list -—installed`
 
+Remove a program installed using apt.
+
+`sudo apt-get --purge remove gimp`
+
+List all users and user info.
+
+`cat /etc/passwd`
+
+Just list users.
+
+`awk -F: '{ print $1}' /etc/passwd`
+
+Create a new user.
+
+`useradd username`
+
+Get information about a particular user.
+
+`grep username /etc/passwd`
+
+Delete a user.
+
+`sudo userdel username`
+
+Also delete a user's home directory.
+
+`sudo userdel -r username`
+
+Kill all of a user's running processes.
+
+`sudo killall -u username`
+
+Force delete a user with running processes.
+
+`sudo userdel -f username`
 
 - - -
 **GENERATING PUBLIC/PRIVATE RSA KEY PAIR**
